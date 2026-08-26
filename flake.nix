@@ -9,11 +9,10 @@
     devShells = builtins.mapAttrs (system: pkgs: {
       default = pkgs.mkShell {
         packages = with pkgs; [
-          python315
+          python314
+          ty
+          ruff
         ];
-        shellHook = ''
-          echo "Welcome to the dev shell ig :P"
-        '';
       };
     }) inputs.nixpkgs.legacyPackages;
   };
