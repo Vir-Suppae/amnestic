@@ -14,7 +14,7 @@
         shellHook = ''
           echo "Welcome to the dev shell ig :P"
         '';
-      }
+      };
     }) inputs.nixpkgs.legacyPackages;
   };
 }
